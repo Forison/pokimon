@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import shortid from 'shortid';
+import { connect } from 'react-redux';
+import { addToList } from '../../redux/action';
+
 
 class Right extends Component {
   constructor(props) {
@@ -49,4 +52,8 @@ class Right extends Component {
   }
 }
 
-export default Right;
+const mapDispatchToProps = dispatch => ({
+  addToPokemonList: pokemonId => dispatch(addToList(pokemonId))
+});
+
+export default connect(null, mapDispatchToProps)(Right);
