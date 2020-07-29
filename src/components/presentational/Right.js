@@ -22,7 +22,9 @@ class Right extends Component {
   }
 
   handlePokeImgClick = (record) => {
+    const { addToPokemonList } = this.props;
     console.log(record);
+    addToPokemonList(record);
   }
   componentDidMount = () => {
     this.getAllPokemons();
@@ -36,7 +38,7 @@ class Right extends Component {
         <div className="container">
           <div className="row ">
             { pokis.map( record =>
-            <div key={shortid.generate()} className="col-2 p-3">
+            <div key={shortid.generate()} className="col-5 col-lg-2 p-3">
               <img 
               src = {`https://pokeres.bastionbot.org/images/pokemon/${record}.png`} 
               alt="pokemon"

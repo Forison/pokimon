@@ -1,8 +1,8 @@
-const ADD_TO_LIST = 'ADD_TO_LIST';
+import ADD_TO_LIST from './constant';
 
 const addToList = newAdd => ({
 	type: ADD_TO_LIST,
-	...newAdd,
+	newAdd,
 });
 
 export { addToList };
