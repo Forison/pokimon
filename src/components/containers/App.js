@@ -8,7 +8,7 @@ import Right from '../presentational/Right';
 function App() {
   return (
     <div> 
-    <div className="App container">
+    <div className="App container-fluid">
       <div className="row pt-5">
         <div className="col-10 shadow-lg rounded d-flex mx-auto">
           <div className="left rounded mt-4">
