@@ -1,6 +1,6 @@
 .left{
   width: 50%;
-  height: 550px;
+  min-height: 550px;
 }
 .right{
   width: 50%;
@@ -63,6 +63,11 @@ img[alt="oops"]{
   padding: 5px;
   margin-top: 10px;
 }
+img[alt="pokemon-show"]{
+  width: 100%;
+  height: 160px;
+}
+
 @media only screen and (max-width: 600px) {
   .name-of-pokemon{
     font-size: 8px;

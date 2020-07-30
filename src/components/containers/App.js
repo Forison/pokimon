@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../stylesheet/App.css';
-import TopLeft from '../presentational/TopLeft';
-import BottomLeft from '../presentational/BottomLeft';
+import Left from '../presentational/TopLeft';
 import Right from '../presentational/Right';
 
 
@@ -12,8 +11,7 @@ function App() {
       <div className="row pt-5">
         <div className="col-12 col-lg-10 shadow-lg rounded d-flex mx-auto">
           <div className="left rounded mt-4">
-          <TopLeft />
-          <BottomLeft />
+          <Left />
           </div>
           <div className="right mt-4">
           <Right />

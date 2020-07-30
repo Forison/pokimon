@@ -1,7 +1,7 @@
 import ADD_INFO from './constant';
 
 const initialState = {
-  pokemon: []
+  pokemon: [],
 };
 
 const addToLineUp = (state = initialState, action) => {

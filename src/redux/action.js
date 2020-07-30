@@ -5,4 +5,5 @@ const addInfo = pokeInfo => ({
 	pokeInfo,
 });
 
-export { addInfo };
+
+export { addInfo};

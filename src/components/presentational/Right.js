@@ -39,7 +39,7 @@ class Right extends Component {
       addToPokemon(hash);
       this.setState({
         count: this.state.count+1,
-        checkDup: [].concat(arg),
+        checkDup: this.state.checkDup.concat(arg),
         message: "",
 
       });
@@ -67,7 +67,7 @@ class Right extends Component {
         <div className="container">
           <div className="row ">
             { pokis.map( record =>
-            <div key={shortid.generate()} className="col-6 col-sm-3 col-lg-2 p-2">
+            <div key={shortid.generate()} className="col-6 col-sm-3 col-lg-2 p-3">
               <img 
               src = {`https://pokeres.bastionbot.org/images/pokemon/${record}.png`} 
               alt="pokemon"
