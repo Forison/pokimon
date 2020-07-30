@@ -67,7 +67,7 @@ class Right extends Component {
         <div className="container">
           <div className="row ">
             { pokis.map( record =>
-            <div key={shortid.generate()} className="col-5 col-lg-2 p-3">
+            <div key={shortid.generate()} className="col-6 col-sm-3 col-lg-2 p-2">
               <img 
               src = {`https://pokeres.bastionbot.org/images/pokemon/${record}.png`} 
               alt="pokemon"

@@ -12,6 +12,11 @@ class TopLeft extends Component {
        information: "",
     }
   }
+
+  handlePokeImgHover = (arg) => {
+   
+  }
+
   componentDidMount = () => {
     const { myList } = this.props;
     if (myList.length === 0) {
@@ -26,11 +31,12 @@ class TopLeft extends Component {
         <div className="container">
          <div className="row">
           { myList.map( data =>
-          <div key={shortid.generate()} className="col-6 col-lg-4 pokemon-pad-left rounded p-3 shadow-lg">
+          <div key={shortid.generate()} className="col-4 col-sm-4 col-lg-4 pokemon-pad-left rounded p-0  p-sm-2 p-lg-3 shadow-lg">
             <h3 className="name-of-pokemon"> {data.name}</h3>
             <img 
               src = {`https://pokeres.bastionbot.org/images/pokemon/${data.id}.png`} 
               alt="pokemon-detail-img"
+              onMouseEnter = {()=>this.handlePokeImgHover(data.id)}
             />
           </div>
           )}
