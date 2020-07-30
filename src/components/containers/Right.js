@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Header from './Header';
+import Header from '../presentational/Header';
 import shortid from 'shortid';
 import { connect } from 'react-redux';
 import { addInfo } from '../../redux/action';
 import axios from 'axios';
-import Gif from '../presentational/748.gif';
+import Gif from '../containers/748.gif';
 
 
 class Right extends Component {

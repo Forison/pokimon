@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from './Header';
+import Header from '../presentational/Header';
 import { connect } from 'react-redux';
 import shortid from 'shortid';
-import Logo from '../presentational/832.gif';
+import Logo from '../containers/832.gif';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'

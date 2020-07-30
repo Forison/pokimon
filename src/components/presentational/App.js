@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../stylesheet/App.css';
-import Left from '../presentational/TopLeft';
-import Right from '../presentational/Right';
+import Left from '../containers/Left';
+import Right from '../containers/Right';
 
 
 function App() {

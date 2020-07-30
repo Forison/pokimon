@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './stylesheet/index.css';
-import App from '../src/components/containers/App';
+import App from '../src/components/presentational/App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { addToLineUp }from './redux/reducer';
 import { Provider } from 'react-redux';
