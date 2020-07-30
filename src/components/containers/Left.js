@@ -7,6 +7,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import { remove } from '../../redux/action';
+import PropTypes from 'prop-types';
 
 
 class TopLeft extends Component {
@@ -110,5 +111,10 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
    del: id => dispatch(remove(id))
 });
+
+TopLeft.propTypes = {
+  myList: PropTypes.array.isRequired,
+  del: PropTypes.func.isRequired,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(TopLeft);

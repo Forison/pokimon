@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { addInfo } from '../../redux/action';
 import axios from 'axios';
 import Gif from '../containers/748.gif';
+import PropTypes from 'prop-types';
 
 
 class Right extends Component {
@@ -94,4 +95,8 @@ const mapDispatchToProps = dispatch => ({
   addToPokemon: pokemonId => dispatch(addInfo(pokemonId))
 });
 
+Right.propTypes = {
+  myList: PropTypes.array.isRequired,
+  addToPokemon: PropTypes.func.isRequired,
+};
 export default connect(mapStateToProps, mapDispatchToProps)(Right);
