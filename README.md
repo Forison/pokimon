@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Murilo-Click%20to%20Contact-brightgreen)](mailto:addoboakyeforison@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/MuriloRoquePai1?label=Follow%20Murilo%20on%20Twitter&style=social)](https://twitter.com/addo_forison)
 
-## Available Scripts
+# Pokemon League
 
-In the project directory, you can run:
+![screenshot](./pokemon.png)
 
-### `yarn start`
+In this project I:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Used React-Redux to build a Pokemon league Application.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# What it does
 
-### `yarn test`
+- This application allows you to line up six out of the 150 available pokemon characters and and get more detailed information about their nature, ie  their names, character, abilities et al. By making API calls to pokeapi, the pokemon API.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Built with
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- Redux
+- Jest
+- CSS
+- JSX
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Live Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Click here](https://git.heroku.com/frozen-sands-04832)
 
-### `yarn eject`
+#### Features to improve
+I am yet to write test for all the method used in the application with Jest. this will be done soon
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Getting Started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone the project to your local machine;
+- `cd` into the project directory;
+- Run `npm install` to install the necessary modules;
+- Run `npm start`, the page will automatically load on [localhost:3000](localhost:3000);
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- You can skip preflight if your react version is not compactible by adding a ```.env``` file with ```SKIP_PREFLIGHT_CHECK=true```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Author
 
-## Learn More
+Addo Boakye Forison
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Github: [@MuriloRoque](https://github.com/forison)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Twitter: [@MuriloRoquePai1](https://twitter.com/addo_forison)
 
-### Code Splitting
+Linkedin: [MuriloRoque](https://www.linkedin.com/in/forison/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues and feature requests are welcome! Start by:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Forking the project
+- Cloning the project to your local machine
+- `cd` into the project directory
+- Run `git checkout -b your-branch-name`
+- Make your contributions
+- Push your branch up to your forked repository
+- Open a Pull Request with a detailed description to the development branch of the original project for a review
 
-### Making a Progressive Web App
+## Show your support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Give a ⭐️ if you like this project!
