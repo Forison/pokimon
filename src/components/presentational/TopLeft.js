@@ -6,6 +6,7 @@ import Logo from '../presentational/832.gif';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { remove } from '../../redux/action';
 
 
 class TopLeft extends Component {
@@ -30,7 +31,12 @@ class TopLeft extends Component {
     });
     await this.setState({pokemon: hash});
   }
-
+  handleRemove = (arg) => {
+    const { del, myList } = this.props;
+    console.log(arg)
+    del(arg);
+    console.log(myList)
+  }
   componentDidMount = () => {
     const { myList } = this.props;
     if (myList.length === 0) {
@@ -40,17 +46,20 @@ class TopLeft extends Component {
   render() {
     const { myList } = this.props;
     const { pokemon, pokeAbility } = this.state;
-    console.log(pokeAbility)
+    console.log(myList)
     return (
       <div>
       <div className = "topLeftComp">
       <Header headerText = "Pokemon Line up"/>
       <div className="container">
          <div className="row">
-          { myList.map( data =>
+          { myList.map( (data,index) =>
           <div key={shortid.generate()} className="col-4 col-sm-4 col-lg-4 pokemon-pad-left rounded p-0  p-sm-2 p-lg-3 shadow-lg">
             <h3 className="name-of-pokemon"> 
-            <FontAwesomeIcon icon = { faTimesCircle } className="float-left pink"/> {data.name}
+            <FontAwesomeIcon 
+            icon = { faTimesCircle }
+             className="float-left pink"
+             onClick = {()=>this.handleRemove(index)}/> {data.name}
             </h3>
             <img 
               src = {`https://pokeres.bastionbot.org/images/pokemon/${data.id}.png`} 
@@ -80,7 +89,7 @@ class TopLeft extends Component {
                 <h3 className="name-of-pokemon-detail text-capitalize"> {pokemon.name}</h3>
                 <h6 className="weight-of-pokemon-detail"> {pokeAbility.length} abilities</h6>
                 <div className="d-flex">
-                  {pokeAbility.map((ability) => <h6 className="abilities-of-pokemon-detail"> {ability}, </h6>)}
+                  {pokeAbility.map((ability) => <h6 key ={shortid.generate()}className="abilities-of-pokemon-detail"> {ability}, </h6>)}
                 </div>
                 <h6 className="weight-of-pokemon-detail"> {pokemon.weight} units weight</h6>
                 <h6 className="height-of-pokemon-detail"> {pokemon.height} units tall</h6>
@@ -99,5 +108,8 @@ const mapStateToProps = state => ({
   myList: state.pokemon,
 });
 
+const mapDispatchToProps = dispatch => ({
+   del: id => dispatch(remove(id))
+});
 
-export default connect(mapStateToProps, null)(TopLeft);
+export default connect(mapStateToProps, mapDispatchToProps)(TopLeft);

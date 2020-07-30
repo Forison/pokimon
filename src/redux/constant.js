@@ -1,3 +1,4 @@
 const ADD_INFO = 'POKE_INFO';
+const REMOVE_POKE = 'REMOVE_POKE';
 
-export default { ADD_INFO }
+export { ADD_INFO, REMOVE_POKE }
