@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import shortid from 'shortid';
 import Logo from '../presentational/832.gif';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 
 
 class TopLeft extends Component {
@@ -47,7 +49,9 @@ class TopLeft extends Component {
          <div className="row">
           { myList.map( data =>
           <div key={shortid.generate()} className="col-4 col-sm-4 col-lg-4 pokemon-pad-left rounded p-0  p-sm-2 p-lg-3 shadow-lg">
-            <h3 className="name-of-pokemon"> {data.name}</h3>
+            <h3 className="name-of-pokemon"> 
+            <FontAwesomeIcon icon = { faTimesCircle } className="float-left pink"/> {data.name}
+            </h3>
             <img 
               src = {`https://pokeres.bastionbot.org/images/pokemon/${data.id}.png`} 
               alt="pokemon-detail-img"
