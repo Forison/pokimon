@@ -1,4 +1,4 @@
-[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Murilo-Click%20to%20Contact-brightgreen)](mailto:addoboakyeforison@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/MuriloRoquePai1?label=Follow%20Murilo%20on%20Twitter&style=social)](https://twitter.com/addo_forison)
+[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Addo-Click%20to%20Contact-brightgreen)](mailto:addoboakyeforison@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/ADDOBOAKYE?label=Follow%20ADDO%20on%20Twitter&style=social)](https://twitter.com/addo_forison)
 
 # Pokemon League
 
