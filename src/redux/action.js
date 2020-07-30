@@ -1,8 +1,8 @@
-import ADD_TO_LIST from './constant';
+import ADD_INFO from './constant';
 
-const addToList = newAdd => ({
-	type: ADD_TO_LIST,
-	newAdd,
+const addInfo = pokeInfo => ({
+	type: ADD_INFO,
+	pokeInfo,
 });
 
-export { addToList };
+export { addInfo };

@@ -18,7 +18,7 @@
 }
 .topLeftComp{
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   border: 1px solid #faf8f8;
 }
 img[alt="pokemon"]{
@@ -31,4 +31,35 @@ img[alt="pokemon"]:hover{
   width: 100%;
   height: 52px;
   transition: height 15s ease-out;
+  cursor: pointer;
+}
+.pokemon-pad-left{
+  background-image: linear-gradient(#fff,#eeeaea,#fff);
+  z-index: 1;
+}
+.pokemon-pad-left:hover{
+  cursor: pointer;
+}
+img[alt="pokemon-detail-img"]{
+  width: 100%;
+  height: 100px;
+}
+.name-of-pokemon{
+  font-size: 12px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bolder;
+}
+.message{
+  text-transform: capitalize;
+  font-size: 10px;
+  color: red;
+  top: 50;
+  font-weight: 700;
+}
+img[alt="oops"]{
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  margin-top: 10px;
 }

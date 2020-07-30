@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 const initialState = {
-  lineUp: []
+  pokemon: []
 }
 
 const store = createStore(addToLineUp, initialState);

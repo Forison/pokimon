@@ -1,7 +1,7 @@
-const ADD_TO_LIST = 'ADD_TO_LIST';
+const ADD_INFO = 'POKE_INFO';
 
 const initialState = {
-  lineUp: []
+  pokemon: []
 }
 
-export default { ADD_TO_LIST, initialState}
+export default { ADD_INFO, initialState}

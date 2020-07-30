@@ -1,13 +1,13 @@
-import ADD_TO_LIST from './constant';
+import ADD_INFO from './constant';
 
 const initialState = {
-  lineUp: [ ]
+  pokemon: []
 };
 
 const addToLineUp = (state = initialState, action) => {
 	switch (action.type) {
-		case ADD_TO_LIST: return{
-      lineUp: [ ...state.lineUp, action.newAdd]
+    case ADD_INFO: return{
+      pokemon: [ ...state.pokemon, action.pokeInfo]
     };
 		default: return state;
   }
