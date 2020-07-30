@@ -46,7 +46,6 @@ class TopLeft extends Component {
   render() {
     const { myList } = this.props;
     const { pokemon, pokeAbility } = this.state;
-    console.log(myList)
     return (
       <div>
       <div className = "topLeftComp">

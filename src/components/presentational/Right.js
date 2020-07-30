@@ -13,8 +13,6 @@ class Right extends Component {
   
     this.state = {
        pokis: [],
-       checkDup: [],
-       count: 1,
        message: ""
     }
   }
@@ -28,9 +26,16 @@ class Right extends Component {
   }
 
   handlePokeImgClick = async(arg) => {
-    const { count,checkDup } = this.state;
-    if (count<=6) {
-      if (!checkDup.includes(arg)) {
+    const { myList } = this.props;
+    let dups = [];
+    if (myList.length>0){
+      myList.forEach(element => {
+        dups.push(element.id)
+      });
+    }
+  
+    if (myList.length<=5) {
+      if (!dups.includes(arg)) {
       const { addToPokemon } = this.props;
       const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${arg}`);
       const {id, abilities, height, moves, name, species, weight } = response.data;
@@ -39,9 +44,7 @@ class Right extends Component {
       addToPokemon(hash);
       this.setState({
         count: this.state.count+1,
-        checkDup: this.state.checkDup.concat(arg),
         message: "",
-
       });
       } else {
         this.setState({message: "Already selected, kindly select a new pokemon"});  
@@ -83,8 +86,12 @@ class Right extends Component {
   }
 }
 
+const mapStateToProps = state => ({
+  myList: state.pokemon,
+});
+
 const mapDispatchToProps = dispatch => ({
   addToPokemon: pokemonId => dispatch(addInfo(pokemonId))
 });
 
-export default connect(null, mapDispatchToProps)(Right);
+export default connect(mapStateToProps, mapDispatchToProps)(Right);
