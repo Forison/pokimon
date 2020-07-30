@@ -70,10 +70,10 @@ class TopLeft extends Component {
           </div>
         </div>
       </div>
-        <div className = "container bottomLeftComp">
+        <div className = "container bottomLeftComp overflow-auto">
           <Header headerText = "Pokemon Data"/>
           <div className="row">
-            <div className="col-5 bottom p-2">
+            <div className="col-12 col-lg-5 bottom p-2">
               {Object.keys(pokemon).length === 0 ? (<div>  <img src={Logo} alt="pokemon-show"/> </div>):
               <img 
                 src = {`https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png`} 
@@ -82,14 +82,14 @@ class TopLeft extends Component {
               }
             </div>
 
-            <div className="col-7 bottom p-2 mx-auto">
+            <div className="col-12 col-lg-7 bottom p-2">
             {Object.keys(pokemon).length === 0 ? (<div> </div>):
               <div>
                 <h3 className="name-of-pokemon-detail text-capitalize"> {pokemon.name}</h3>
-                <h6 className="weight-of-pokemon-detail"> {pokeAbility.length} abilities</h6>
-                <div className="d-flex">
-                  {pokeAbility.map((ability) => <h6 key ={shortid.generate()}className="abilities-of-pokemon-detail"> {ability}, </h6>)}
-                </div>
+                <h6 className="ability-of-pokemon-detail text-uppercase"> {pokeAbility.length} abilities</h6>
+                <ul>
+                  {pokeAbility.map((ability) => <li key ={shortid.generate()}className="abilities-of-pokemon-detail"> {ability}. </li>)}
+                </ul>
                 <h6 className="weight-of-pokemon-detail"> {pokemon.weight} units weight</h6>
                 <h6 className="height-of-pokemon-detail"> {pokemon.height} units tall</h6>
               </div>

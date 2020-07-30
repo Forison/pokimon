@@ -7,7 +7,7 @@ export default function Header({headerText}) {
   return (
     <div>
       <header className="navbar">
-        <h1 className="mx-auto header-size">
+        <h1 className="mx-auto header-size pink">
           { headerText }
         </h1>
       </header>
