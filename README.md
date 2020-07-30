@@ -41,11 +41,11 @@ I am yet to write test for all the method used in the application with Jest. thi
 
 Addo Boakye Forison
 
-Github: [@MuriloRoque](https://github.com/forison)
+Github: [@forison](https://github.com/forison)
 
-Twitter: [@MuriloRoquePai1](https://twitter.com/addo_forison)
+Twitter: [@addo_forison](https://twitter.com/addo_forison)
 
-Linkedin: [MuriloRoque](https://www.linkedin.com/in/forison/)
+Linkedin: [forison](https://www.linkedin.com/in/forison/)
 
 ## 🤝 Contributing
 
