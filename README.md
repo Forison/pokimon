@@ -23,7 +23,7 @@ In this project I:
 
 ## Live Demo
 
-[Click here](https://git.heroku.com/frozen-sands-04832)
+[Click here](https://frozen-sands-04832.herokuapp.com/)
 
 #### Features to improve
 I am yet to write test for all the method used in the application with Jest. this will be done soon
