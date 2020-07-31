@@ -95,4 +95,23 @@ img[alt="pokemon-show"]{
     min-height: 200px;
     border: 1px solid #faf8f8;
   }
+  .ability-of-pokemon-detail{
+    font-size: 10px;
+  }
+  .name-of-pokemon-detail{
+    font-size: 17px;
+    text-align: center;
+  }
+  .weight-of-pokemon-detail{
+    font-size: 10px;
+  }
+  .height-of-pokemon-detail{
+    font-size: 10px;
+  }
+  .bottomLeftComp {
+    height: auto;
+  }
+  .rightComp{
+    height: 100%;
+  }
 }

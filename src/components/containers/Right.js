@@ -67,7 +67,7 @@ class Right extends Component {
         <h1 className="position-absolute mr-5 message">
           { message === "" ? (<img src={Gif} alt="oops"/>): message }
         </h1>
-        <Header headerText = "Poke Dex Area" />
+        <Header headerText = "Poke Dex Area" className="header-size"/>
         <div className="container">
           <div className="row ">
             { pokis.map( record =>
