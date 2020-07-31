@@ -27,16 +27,17 @@ class TopLeft extends Component {
     const {id, abilities, height, moves, name, species, weight } = response.data;
     let hash = {};
     hash = {id, abilities, height, moves, name, species, weight};
+    const abilitieStore = [];
+    this.setState({pokeAbility: []});
     abilities.forEach(async(element) => {
-      await this.setState({ pokeAbility: this.state.pokeAbility.concat(element.ability.name)})
+      abilitieStore.push((element.ability.name));
+      await this.setState({ pokeAbility: abilitieStore})
     });
     await this.setState({pokemon: hash});
   }
   handleRemove = (arg) => {
-    const { del, myList } = this.props;
-    console.log(arg)
+    const { del } = this.props;
     del(arg);
-    console.log(myList)
   }
   componentDidMount = () => {
     const { myList } = this.props;
